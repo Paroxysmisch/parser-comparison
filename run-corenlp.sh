@@ -1,6 +1,7 @@
 CORENLP_DIRECTORY='stanford-corenlp-4.5.8'
 if [ ! -d "$CORENLP_DIRECTORY" ]; then
   echo "$CORENLP_DIRECTORY does not exist. Downloading."
+  wget https://nlp.stanford.edu/software/stanford-corenlp-4.5.8.zip
   unzip stanford-corenlp-4.5.8.zip
 fi
 
