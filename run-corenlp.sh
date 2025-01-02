@@ -12,4 +12,5 @@ for file in `find . -name "*.jar"`; do export CLASSPATH="$CLASSPATH:`realpath $f
 echo 'Running corenlp parser on input file.'
 
 java -mx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -outputFormat xml -file '../input.txt' -annotators tokenize,pos,parse -ssplit.eolonly
-cp 'input.txt.xml' '../corenlp-output.txt'
+cat 'input.txt.xml' | sed -nE 's/<parse>(.*)<\/parse>/\1/p' > '../corenlp-output.txt'
+sed -i 's/^[[:space:]]*//;s/[[:space:]]*$//' '../corenlp-output.txt'
