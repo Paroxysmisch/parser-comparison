@@ -78,7 +78,7 @@
    (VP (VP (VBD came))
        (CC and)
        (VP (VBD went)))
-   .)
+   (. .))
 
 (S (NP (PRP She))
    (VP (VBD sighed)

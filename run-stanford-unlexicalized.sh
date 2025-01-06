@@ -7,4 +7,4 @@ fi
 
 echo 'Running stanford unlexicalized parser on input file.'
 
-java -mx150m -cp "$STANFORD_DIRECTORY/*:" edu.stanford.nlp.parser.lexparser.LexicalizedParser -outputFormat "penn" edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz input.txt >> "stanford-unlexicalized-output.txt"
+java -mx150m -cp "$STANFORD_DIRECTORY/*:" edu.stanford.nlp.parser.lexparser.LexicalizedParser -outputFormat "penn" edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz input.txt | awk 'NF{printf "%s ", $0; next} {print ""}' | sed 's/ $//' > stanford-unlexicalized-output.txt
