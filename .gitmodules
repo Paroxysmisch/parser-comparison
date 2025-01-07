@@ -1,0 +1,3 @@
+[submodule "berkeley-parser-analyser"]
+	path = berkeley-parser-analyser
+	url = git@github.com:jkkummerfeld/berkeley-parser-analyser.git
