@@ -1,0 +1,606 @@
+# Time of run:
+# Tue Jan  7 19:37:19 2025
+# Command:
+# berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-flat.txt stanford-lexicalized-output.txt berkeley-parser-analyser-outputs/stanford-lexicalized
+#
+Printing tree transformations
+Sentence 1:
+3 Initial errors
+0 on fringe, 2 iterations
+2 Error:Different label
+1 Error:UNSET add
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		[01;36m(PP[00m [01;31m(SBAR[00m
+			(IN As)
+			(S she walked past it)[01;31m)[00m[01;36m)[00m
+		[01;36m(S[00m
+			(NP the driver 's glass)
+			(VP started to open)[01;36m)[00m))
+Step:Different label
+{'type': 'relabel', 'change': ('SBAR', 'PP'), 'subtrees': ['IN', 'S'], 'parent': 'S', 'span': (0, 5), 'family': ['PP', 'NP', 'VP'], 'auto preterminals': ('IN', 'PRP', 'VBD', 'IN', 'PRP'), 'auto preterminal span': (0, 5), 'over_word': False, 'classified_type': 'Different label'}
+(ROOT
+	(S
+		(PP As she walked past it)
+		[01;36m(S[00m
+			(NP the driver 's glass)
+			(VP started to open)[01;36m)[00m))
+Step:UNSET add
+{'type': 'add', 'label': 'S', 'span': (5, 12), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['PP', 'S'], 'auto preterminals': ('DT', 'NN', 'POS', 'NN', 'VBD', 'TO', 'VB'), 'auto preterminal span': (5, 12), 'left siblings': [(PP (IN As) (S (NP (PRP she)) (VP (VBD walked) (PP (IN past) (NP (PRP it))))))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(ROOT As she walked past it the driver 's glass started to open)
+
+Sentence 2:
+1 Initial errors
+0 on fringe, 1 iterations
+1 Error:UNSET add
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		(PP With a handkerchief)
+		[01;36m(S[00m
+			(NP she)
+			(VP wiped the sweat from her forehead)[01;36m)[00m))
+Step:UNSET add
+{'type': 'add', 'label': 'S', 'span': (3, 10), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['PP', 'S'], 'auto preterminals': ('PRP', 'VBD', 'DT', 'NN', 'IN', 'PRP$', 'NN'), 'auto preterminal span': (3, 10), 'left siblings': [(PP (IN With) (NP (DT a) (NN handkerchief)))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(ROOT With a handkerchief she wiped the sweat from her forehead)
+
+Sentence 3:
+8 Initial errors
+0 on fringe, 6 iterations
+2 Error:Single Word Phrase
+2 Error:Co-ordination
+1 Error:Clause Attachment
+1 Error:Single Word Phrase
+1 Error:UNSET add
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		[01;36m(S[00m
+			[01;36m(PP[00m [01;31m(ADVP[00m
+				(RB Prudently)[01;31m)[00m[01;36m)[00m
+			(S
+				(NP they)
+				(VP
+					(VBD had)
+					(VP
+						(VBN diversified)
+						(PP
+							(IN into)
+							[01;31m(NP[00m
+								[01;36m(NP[00m
+									(NN banking)[01;36m)[00m
+								(CC and)
+								[01;36m(NP[00m
+									(NN insurance)[01;36m)[00m[01;31m)[00m))))[01;36m)[00m
+		(CC and)
+		(S
+			(PP as a result)
+			[01;36m(S[00m
+				(NP their influence)
+				(VP
+					(VBD was)
+					(VP
+						(VBN felt)
+						(PP
+							(IN at)
+							(NP
+								(DT the)
+								[01;36m(ADJP[00m
+									(JJS highest)[01;36m)[00m
+								(NN level)))))[01;36m)[00m)))
+Step:Single Word Phrase
+{'type': 'relabel', 'change': ('ADVP', 'PP'), 'subtrees': ['RB'], 'parent': 'S', 'span': (0, 1), 'family': ['PP', 'S', 'CC', 'S'], 'auto preterminals': ('RB',), 'auto preterminal span': (0, 1), 'over_word': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		[01;36m(S[00m
+			(PP Prudently)
+			(S
+				(NP they)
+				(VP
+					(VBD had)
+					(VP
+						(VBN diversified)
+						(PP
+							(IN into)
+							[01;31m(NP[00m
+								[01;36m(NP[00m
+									(NN banking)[01;36m)[00m
+								(CC and)
+								[01;36m(NP[00m
+									(NN insurance)[01;36m)[00m[01;31m)[00m))))[01;36m)[00m
+		(CC and)
+		(S
+			(PP as a result)
+			[01;36m(S[00m
+				(NP their influence)
+				(VP
+					(VBD was)
+					(VP
+						(VBN felt)
+						(PP
+							(IN at)
+							(NP
+								(DT the)
+								[01;36m(ADJP[00m
+									(JJS highest)[01;36m)[00m
+								(NN level)))))[01;36m)[00m)))
+Step:Co-ordination
+{'type': 'move', 'old_parent': 'NP', 'new_parent': 'PP', 'movers': ['NN', 'CC'], 'mover info': [('NN', (5, 6)), ('CC', (6, 7))], 'new_family': ['IN', 'NN', 'CC', 'NP'], 'old_family': ['NN', 'CC', 'NN'], 'start left siblings': [], 'start right siblings': ['NN'], 'end left siblings': ['IN'], 'end right siblings': ['NP'], 'auto preterminals': ('IN', 'NN', 'CC', 'NN'), 'auto preterminal span': (4, 8), 'classified_type': 'Co-ordination'}
+(ROOT
+	(S
+		[01;36m(S[00m
+			(PP Prudently)
+			(S
+				(NP they)
+				(VP
+					(VBD had)
+					(VP
+						(VBN diversified)
+						(PP
+							(IN into)
+							[01;36m(NP[00m
+								(NN banking)[01;36m)[00m
+							(CC and)
+							(NP insurance)))))[01;36m)[00m
+		(CC and)
+		(S
+			(PP as a result)
+			[01;36m(S[00m
+				(NP their influence)
+				(VP
+					(VBD was)
+					(VP
+						(VBN felt)
+						(PP
+							(IN at)
+							(NP
+								(DT the)
+								[01;36m(ADJP[00m
+									(JJS highest)[01;36m)[00m
+								(NN level)))))[01;36m)[00m)))
+Step:Clause Attachment
+{'type': 'add', 'label': 'S', 'span': (0, 8), 'subtrees': ['PP', 'S'], 'parent': 'S', 'family': ['S', 'CC', 'S'], 'auto preterminals': ('RB', 'PRP', 'VBD', 'VBN', 'IN', 'NN', 'CC', 'NN'), 'auto preterminal span': (0, 8), 'left siblings': [], 'right siblings': [(CC and), (S (PP (IN as) (NP (DT a) (NN result))) (NP (PRP$ their) (NN influence)) (VP (VBD was) (VP (VBN felt) (PP (IN at) (NP (DT the) (JJS highest) (NN level))))))], 'over_word': False, 'over words': False, 'classified_type': 'Clause Attachment'}
+(ROOT
+	(S
+		(S
+			(PP Prudently)
+			(S
+				(NP they)
+				(VP
+					(VBD had)
+					(VP
+						(VBN diversified)
+						(PP
+							(IN into)
+							[01;36m(NP[00m
+								(NN banking)[01;36m)[00m
+							(CC and)
+							(NP insurance))))))
+		(CC and)
+		(S
+			(PP as a result)
+			[01;36m(S[00m
+				(NP their influence)
+				(VP
+					(VBD was)
+					(VP
+						(VBN felt)
+						(PP
+							(IN at)
+							(NP
+								(DT the)
+								[01;36m(ADJP[00m
+									(JJS highest)[01;36m)[00m
+								(NN level)))))[01;36m)[00m)))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'NP', 'span': (5, 6), 'subtrees': ['NN'], 'parent': 'PP', 'family': ['IN', 'NP', 'CC', 'NP'], 'auto preterminals': ('NN',), 'auto preterminal span': (5, 6), 'left siblings': [(IN into)], 'right siblings': [(CC and), (NP (NN insurance))], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		(S Prudently they had diversified into banking and insurance)
+		(CC and)
+		(S
+			(PP as a result)
+			[01;36m(S[00m
+				(NP their influence)
+				(VP
+					(VBD was)
+					(VP
+						(VBN felt)
+						(PP
+							(IN at)
+							(NP
+								(DT the)
+								[01;36m(ADJP[00m
+									(JJS highest)[01;36m)[00m
+								(NN level)))))[01;36m)[00m)))
+Step:UNSET add
+{'type': 'add', 'label': 'S', 'span': (12, 20), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['PP', 'S'], 'auto preterminals': ('PRP$', 'NN', 'VBD', 'VBN', 'IN', 'DT', 'JJS', 'NN'), 'auto preterminal span': (12, 20), 'left siblings': [(PP (IN as) (NP (DT a) (NN result)))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(ROOT
+	(S
+		(S Prudently they had diversified into banking and insurance)
+		(CC and)
+		(S
+			(PP as a result)
+			(S
+				(NP their influence)
+				(VP
+					(VBD was)
+					(VP
+						(VBN felt)
+						(PP
+							(IN at)
+							(NP
+								(DT the)
+								[01;36m(ADJP[00m
+									(JJS highest)[01;36m)[00m
+								(NN level)))))))))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADJP', 'span': (18, 19), 'subtrees': ['JJS'], 'parent': 'NP', 'family': ['DT', 'ADJP', 'NN'], 'auto preterminals': ('JJS',), 'auto preterminal span': (18, 19), 'left siblings': [(DT the)], 'right siblings': [(NN level)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT Prudently they had diversified into banking and insurance and as a result their influence was felt at the highest level)
+
+Sentence 4:
+1 Initial errors
+0 on fringe, 1 iterations
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		(NP The arranged marriage)
+		(VP
+			(MD would)
+			(VP
+				(VB be)
+				(NP
+					(NP the social event)
+					(PP
+						(IN of)
+						(NP
+							(DT the)
+							[01;36m(ADJP[00m
+								(JJ following)[01;36m)[00m
+							(NN year))))))))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADJP', 'span': (10, 11), 'subtrees': ['JJ'], 'parent': 'NP', 'family': ['DT', 'ADJP', 'NN'], 'auto preterminals': ('JJ',), 'auto preterminal span': (10, 11), 'left siblings': [(DT the)], 'right siblings': [(NN year)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT The arranged marriage would be the social event of the following year)
+
+Sentence 5:
+9 Initial errors
+0 on fringe, 7 iterations
+2 Error:Single Word Phrase
+2 Error:PP Attachment
+1 Error:UNSET add
+1 Error:Single Word Phrase
+1 Error:Single Word Phrase
+1 Error:PP Attachment
+1 Error:Clause Attachment
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			[01;31m(S[00m
+				[01;31m(PP[00m
+					(IN at)
+					[01;36m(PP[00m [01;31m(ADJP[00m [01;33m(S[00m
+						([01;36mRB[00m [01;31mJJ[00m last)[01;31m)[00m[01;36m)[00m[01;31m)[00m
+				[01;36m(S[00m
+					(NP she)
+					(VP spoke)[01;36m)[00m[01;31m)[00m) [01;33mS)[00m
+		[01;36m(S[00m
+			(NP her words)
+			(VP
+				(VBD were)
+				(ADJP
+					[01;36m(ADJP[00m
+						(JJ heavy)[01;36m)[00m
+					(CC and)
+					[01;36m(ADJP[00m
+						(JJ disjointed)[01;36m)[00m))[01;36m)[00m))
+Step:Single Word Phrase
+{'type': 'relabel', 'change': ('ADJP', 'PP'), 'subtrees': ['JJ'], 'parent': 'PP', 'span': (2, 3), 'family': ['IN', 'PP'], 'auto preterminals': ('JJ',), 'auto preterminal span': (2, 3), 'over_word': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			[01;31m(S[00m
+				[01;31m(PP[00m
+					(IN at)
+					(PP [01;33m(S[00m
+						([01;36mRB[00m [01;31mJJ[00m last))[01;31m)[00m
+				[01;36m(S[00m
+					(NP she)
+					(VP spoke)[01;36m)[00m[01;31m)[00m) [01;33mS)[00m
+		[01;36m(S[00m
+			(NP her words)
+			(VP
+				(VBD were)
+				(ADJP
+					[01;36m(ADJP[00m
+						(JJ heavy)[01;36m)[00m
+					(CC and)
+					[01;36m(ADJP[00m
+						(JJ disjointed)[01;36m)[00m))[01;36m)[00m))
+Step:PP Attachment
+{'type': 'move', 'old_parent': 'S', 'new_parent': 'SBAR', 'movers': ['PP'], 'mover info': [('PP', (1, 3))], 'new_family': ['WHADVP', 'PP', 'S'], 'old_family': ['PP', 'NP', 'VP'], 'start left siblings': [], 'start right siblings': ['NP', 'VP'], 'end left siblings': ['WHADVP'], 'end right siblings': ['S'], 'auto preterminals': ('WRB', 'IN', 'JJ', 'PRP', 'VBD'), 'auto preterminal span': (0, 5), 'classified_type': 'PP Attachment'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			[01;31m(PP[00m
+				(IN at)
+				(PP [01;33m(S[00m
+					([01;36mRB[00m [01;31mJJ[00m last))[01;31m)[00m
+			(S she spoke)) [01;33mS)[00m
+		[01;36m(S[00m
+			(NP her words)
+			(VP
+				(VBD were)
+				(ADJP
+					[01;36m(ADJP[00m
+						(JJ heavy)[01;36m)[00m
+					(CC and)
+					[01;36m(ADJP[00m
+						(JJ disjointed)[01;36m)[00m))[01;36m)[00m))
+Step:UNSET add
+{'type': 'add', 'label': 'S', 'span': (5, 11), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['SBAR', 'S'], 'auto preterminals': ('PRP$', 'NNS', 'VBD', 'JJ', 'CC', 'JJ'), 'auto preterminal span': (5, 11), 'left siblings': [(SBAR (WHADVP (WRB When)) (PP (IN at) (PP (JJ last))) (S (NP (PRP she)) (VP (VBD spoke))))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			[01;31m(PP[00m
+				(IN at)
+				(PP [01;33m(S[00m
+					([01;36mRB[00m [01;31mJJ[00m last))[01;31m)[00m
+			(S she spoke)) [01;33mS)[00m
+		(S
+			(NP her words)
+			(VP
+				(VBD were)
+				(ADJP
+					[01;36m(ADJP[00m
+						(JJ heavy)[01;36m)[00m
+					(CC and)
+					[01;36m(ADJP[00m
+						(JJ disjointed)[01;36m)[00m)))))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADJP', 'span': (8, 9), 'subtrees': ['JJ'], 'parent': 'ADJP', 'family': ['ADJP', 'CC', 'JJ'], 'auto preterminals': ('JJ',), 'auto preterminal span': (8, 9), 'left siblings': [], 'right siblings': [(CC and), (JJ disjointed)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			[01;31m(PP[00m
+				(IN at)
+				(PP [01;33m(S[00m
+					([01;36mRB[00m [01;31mJJ[00m last))[01;31m)[00m
+			(S she spoke)) [01;33mS)[00m
+		(S
+			(NP her words)
+			(VP
+				(VBD were)
+				(ADJP
+					(ADJP heavy)
+					(CC and)
+					[01;36m(ADJP[00m
+						(JJ disjointed)[01;36m)[00m)))))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADJP', 'span': (10, 11), 'subtrees': ['JJ'], 'parent': 'ADJP', 'family': ['ADJP', 'CC', 'ADJP'], 'auto preterminals': ('JJ',), 'auto preterminal span': (10, 11), 'left siblings': [(ADJP (JJ heavy)), (CC and)], 'right siblings': [], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			[01;31m(PP[00m
+				(IN at)
+				(PP [01;33m(S[00m
+					([01;36mRB[00m [01;31mJJ[00m last))[01;31m)[00m
+			(S she spoke)) [01;33mS)[00m
+		(S her words were heavy and disjointed)))
+Step:PP Attachment
+{'type': 'remove', 'label': 'PP', 'span': (1, 3), 'subtrees': ['IN', 'PP'], 'parent': 'SBAR', 'family': ['WHADVP', 'PP', 'S'], 'left siblings': ['WHADVP'], 'right siblings': ['S'], 'over words': False, 'over_word': False, 'auto preterminals': ('WRB', 'IN', 'JJ', 'PRP', 'VBD'), 'auto preterminal span': (0, 5), 'classified_type': 'PP Attachment'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			(IN at)
+			[01;36m(S[00m
+				(PP
+					([01;36mRB[00m [01;31mJJ[00m last))
+				(S she spoke)[01;36m)[00m)
+		(S her words were heavy and disjointed)))
+Step:Clause Attachment
+{'type': 'add', 'label': 'S', 'span': (2, 5), 'subtrees': ['PP', 'S'], 'parent': 'SBAR', 'family': ['WHADVP', 'IN', 'S'], 'auto preterminals': ('JJ', 'PRP', 'VBD'), 'auto preterminal span': (2, 5), 'left siblings': [(WHADVP (WRB When)), (IN at)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'Clause Attachment'}
+(ROOT
+	(S
+		(SBAR
+			(WHADVP When)
+			(IN at)
+			(S
+				(PP
+					([01;36mRB[00m [01;31mJJ[00m last))
+				(S she spoke)))
+		(S her words were heavy and disjointed)))
+
+Sentence 6:
+2 Initial errors
+0 on fringe, 1 iterations
+2 Error:PP Attachment
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		(NP
+			(NP The road)
+			(PP
+				([01;36mIN[00m [01;31mTO[00m to)
+				(NP the coast)))
+		(VP
+			(VBD was)
+			[01;36m(ADJP[00m
+				[01;31m(ADJP[00m
+					(JJ busy)
+					(PP with traffic)[01;31m)[00m
+				(PP in both directions)[01;36m)[00m)))
+Step:PP Attachment
+{'type': 'move', 'old_parent': 'VP', 'new_parent': 'ADJP', 'movers': ['PP'], 'mover info': [('PP', (9, 12))], 'new_family': ['JJ', 'PP', 'PP'], 'old_family': ['VBD', 'ADJP', 'PP'], 'start left siblings': ['VBD', 'ADJP'], 'start right siblings': [], 'end left siblings': ['JJ', 'PP'], 'end right siblings': [], 'auto preterminals': ('VBD', 'JJ', 'IN', 'NN', 'IN', 'DT', 'NNS'), 'auto preterminal span': (5, 12), 'classified_type': 'PP Attachment'}
+(ROOT
+	(S
+		(NP
+			(NP The road)
+			(PP
+				([01;36mIN[00m [01;31mTO[00m to)
+				(NP the coast)))
+		(VP was busy with traffic in both directions)))
+
+Sentence 7:
+2 Initial errors
+0 on fringe, 2 iterations
+1 Error:Single Word Phrase
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		(NP The expected date)
+		(VP
+			[01;36m(VP[00m
+				(VBD came)[01;36m)[00m
+			(CC and)
+			[01;36m(VP[00m
+				(VBD went)[01;36m)[00m)))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'VP', 'span': (3, 4), 'subtrees': ['VBD'], 'parent': 'VP', 'family': ['VP', 'CC', 'VBD'], 'auto preterminals': ('VBD',), 'auto preterminal span': (3, 4), 'left siblings': [], 'right siblings': [(CC and), (VBD went)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		(NP The expected date)
+		(VP
+			(VP came)
+			(CC and)
+			[01;36m(VP[00m
+				(VBD went)[01;36m)[00m)))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'VP', 'span': (5, 6), 'subtrees': ['VBD'], 'parent': 'VP', 'family': ['VP', 'CC', 'VP'], 'auto preterminals': ('VBD',), 'auto preterminal span': (5, 6), 'left siblings': [(VP (VBD came)), (CC and)], 'right siblings': [], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT The expected date came and went)
+
+Sentence 8:
+0 Initial errors
+0 on fringe, 0 iterations
+
+Sentence 9:
+9 Initial errors
+0 on fringe, 3 iterations
+6 Error:NP Attachment
+2 Error:Modifier Attachment
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT [01;33m(NP[00m
+	(S
+		[01;31m(NP[00m
+			(NP
+				([01;36mRB[00m [01;31mDT[00m All))
+			[01;31m(PP[00m [01;33m(PP[00m
+				(IN through)
+				[01;31m(NP[00m
+					(NNP August)[01;31m)[00m[01;31m)[00m[01;31m)[00m
+		[01;31m(ADVP[00m
+			(NP the rain) [01;33mPP) NP)[00m
+			[01;36m(ADVP[00m
+				(RB [01;33m(VP[00m hardly)[01;36m)[00m[01;31m)[00m
+		[01;31m(VP[00m
+			(VBD stopped)[01;31m)[00m)) [01;33mVP)[00m
+Step:NP Attachment
+{'type': 'move', 'old_parent': 'ADVP', 'new_parent': 'PP', 'movers': ['NP'], 'mover info': [('NP', (3, 5))], 'new_family': ['IN', 'NP', 'NP'], 'old_family': ['NP', 'RB'], 'start left siblings': [], 'start right siblings': ['RB'], 'end left siblings': ['IN', 'NP'], 'end right siblings': [], 'auto preterminals': ('DT', 'IN', 'NNP', 'DT', 'NN', 'RB', 'VBD'), 'auto preterminal span': (0, 7), 'classified_type': 'NP Attachment'}
+(ROOT
+	(S
+		(NP
+			(NP
+				([01;36mRB[00m [01;31mDT[00m All))
+			(PP
+				(IN through)
+				[01;31m(NP[00m
+					(NNP August)[01;31m)[00m
+				(NP the rain)))
+		[01;36m(VP[00m
+			(ADVP hardly)
+			[01;31m(VP[00m
+				(VBD stopped)[01;31m)[00m[01;36m)[00m))
+Step:Modifier Attachment
+{'type': 'move', 'old_parent': 'S', 'new_parent': 'VP', 'movers': ['ADVP'], 'mover info': [('ADVP', (5, 6))], 'new_family': ['ADVP', 'VBD'], 'old_family': ['NP', 'ADVP', 'VP'], 'start left siblings': ['NP'], 'start right siblings': ['VP'], 'end left siblings': [], 'end right siblings': ['VBD'], 'auto preterminals': ('DT', 'IN', 'NNP', 'DT', 'NN', 'RB', 'VBD'), 'auto preterminal span': (0, 7), 'POS confusion': ('RB', 'RB'), 'classified_type': 'Modifier Attachment'}
+(ROOT
+	(S
+		(NP
+			(NP
+				([01;36mRB[00m [01;31mDT[00m All))
+			(PP
+				(IN through)
+				[01;31m(NP[00m
+					(NNP August)[01;31m)[00m
+				(NP the rain)))
+		(VP hardly stopped)))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'NP', 'span': (2, 3), 'subtrees': ['NNP'], 'parent': 'PP', 'family': ['IN', 'NP', 'NP'], 'left siblings': ['IN'], 'right siblings': ['NP'], 'over words': True, 'over_word': True, 'auto preterminals': ('IN', 'NNP', 'DT', 'NN'), 'auto preterminal span': (1, 5), 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		(NP
+			(NP
+				([01;36mRB[00m [01;31mDT[00m All))
+			(PP through August the rain))
+		(VP hardly stopped)))
+
+Sentence 10:
+6 Initial errors
+0 on fringe, 3 iterations
+4 Error:NP Attachment
+1 Error:UNSET add
+1 Error:Unary
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(VP[00m
+	(ROOT
+		(S
+			[01;31m(S[00m
+				[01;31m(VP[00m
+					([01;36mVBP[00m [01;31mVB[00m Thank)
+					[01;33m(NP[00m (NP the gods)[01;31m)[00m[01;31m)[00m
+			[01;36m(S[00m
+				[01;36m(SBAR[00m
+					(NP he)
+					(VP did n't have to know of this)[01;36m)[00m[01;36m)[00m)) [01;33mNP)[00m[01;36m)[00m
+Step:NP Attachment
+{'type': 'move', 'old_parent': 'S', 'new_parent': 'VP', 'movers': ['NP', 'VP'], 'mover info': [('NP', (3, 4)), ('VP', (4, 11))], 'new_family': ['VB', 'NP', 'NP', 'VP'], 'old_family': ['S', 'NP', 'VP'], 'start left siblings': ['S'], 'start right siblings': [], 'end left siblings': ['VB', 'NP'], 'end right siblings': [], 'auto preterminals': ('VB', 'DT', 'NNS', 'PRP', 'VBD', 'RB', 'VB', 'TO', 'VB', 'IN', 'DT'), 'auto preterminal span': (0, 11), 'added and moved': True, 'added label': 'S', 'adding node already present': False, 'classified_type': 'NP Attachment'}
+(ROOT
+	(S
+		(VP
+			([01;36mVBP[00m [01;31mVB[00m Thank)
+			(NP
+				(NP the gods)
+				[01;36m(S[00m
+					[01;36m(SBAR[00m
+						(NP he)
+						(VP did n't have to know of this)[01;36m)[00m[01;36m)[00m))))
+Step:UNSET add
+{'type': 'add', 'label': 'SBAR', 'span': (3, 11), 'subtrees': ['NP', 'VP'], 'parent': 'NP', 'family': ['NP', 'SBAR'], 'auto preterminals': ('PRP', 'VBD', 'RB', 'VB', 'TO', 'VB', 'IN', 'DT'), 'auto preterminal span': (3, 11), 'left siblings': [(NP (DT the) (NNS gods))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(ROOT
+	(S
+		(VP
+			([01;36mVBP[00m [01;31mVB[00m Thank)
+			(NP
+				(NP the gods)
+				[01;36m(S[00m
+					(SBAR
+						(NP he)
+						(VP did n't have to know of this))[01;36m)[00m))))
+Step:Unary
+{'type': 'add', 'label': 'S', 'span': (3, 11), 'subtrees': ['SBAR'], 'parent': 'NP', 'family': ['NP', 'S'], 'auto preterminals': ('PRP', 'VBD', 'RB', 'VB', 'TO', 'VB', 'IN', 'DT'), 'auto preterminal span': (3, 11), 'left siblings': [(NP (DT the) (NNS gods))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'Unary'}
+(ROOT
+	(S
+		(VP
+			([01;36mVBP[00m [01;31mVB[00m Thank)
+			(NP the gods he did n't have to know of this))))
+
