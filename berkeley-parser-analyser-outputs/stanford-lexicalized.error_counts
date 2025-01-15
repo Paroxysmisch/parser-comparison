@@ -1,14 +1,15 @@
 # Time of run:
-# Wed Jan  8 15:32:03 2025
+# Wed Jan 15 22:04:03 2025
 # Command:
-# berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-flat.txt stanford-lexicalized-output.txt berkeley-parser-analyser-outputs/stanford-lexicalized
+# berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt stanford-lexicalized-output.txt berkeley-parser-analyser-outputs/stanford-lexicalized
 #
-10 12 Single Word Phrase
-5 5 UNSET add
-3 5 PP Attachment
-2 10 NP Attachment
-2 2 Clause Attachment
-1 2 Modifier Attachment
+9 9 Single Word Phrase
+6 6 Unary
+3 4 PP Attachment
+2 7 NP Attachment
+2 4 Modifier Attachment
+2 3 Clause Attachment
 1 2 Different label
-1 2 Co-ordination
-1 1 Unary
+1 1 UNSET remove
+1 1 UNSET add
+1 1 NP Internal Structure

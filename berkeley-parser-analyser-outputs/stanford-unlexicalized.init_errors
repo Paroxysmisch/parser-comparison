@@ -1,35 +1,30 @@
 # Time of run:
-# Wed Jan  8 15:32:03 2025
+# Wed Jan 15 22:04:03 2025
 # Command:
-# berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-flat.txt stanford-unlexicalized-output.txt berkeley-parser-analyser-outputs/stanford-unlexicalized
+# berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt stanford-unlexicalized-output.txt berkeley-parser-analyser-outputs/stanford-unlexicalized
 #
 Sentence 1:
-(ROOT
-	(S
-		[01;36m(PP[00m [01;31m(SBAR[00m
-			(IN As)
-			(S she walked past it)[01;31m)[00m[01;36m)[00m
-		[01;36m(S[00m
-			(NP the driver 's glass)
-			(VP started to open)[01;36m)[00m))
+(ROOT As she walked past it the driver 's glass started to open)
 
 
 Sentence 2:
 (ROOT
 	(S
 		(PP With a handkerchief)
-		[01;36m(S[00m
-			(NP she)
-			(VP wiped the sweat from her forehead)[01;36m)[00m))
+		(NP she)
+		(VP
+			(VBD wiped)
+			[01;36m(NP[00m
+				(NP the sweat)
+				(PP from her forehead)[01;36m)[00m)))
 
 
 Sentence 3:
 (ROOT
 	(S
 		[01;36m(S[00m
-			[01;36m(PP[00m [01;31m(ADVP[00m
-				(RB Prudently)[01;31m)[00m[01;36m)[00m
-			(S
+			(ADVP Prudently)
+			[01;31m(S[00m
 				(NP they)
 				(VP
 					(VBD had)
@@ -37,28 +32,14 @@ Sentence 3:
 						(VBN diversified)
 						(PP
 							(IN into)
-							[01;31m(NP[00m
+							(NP
 								[01;36m(NP[00m
 									(NN banking)[01;36m)[00m
 								(CC and)
 								[01;36m(NP[00m
-									(NN insurance)[01;36m)[00m[01;31m)[00m))))[01;36m)[00m
+									(NN insurance)[01;36m)[00m))))[01;31m)[00m[01;36m)[00m
 		(CC and)
-		(S
-			(PP as a result)
-			[01;36m(S[00m
-				(NP their influence)
-				(VP
-					(VBD was)
-					(VP
-						(VBN felt)
-						(PP
-							(IN at)
-							(NP
-								(DT the)
-								[01;36m(ADJP[00m
-									(JJS highest)[01;36m)[00m
-								(NN level)))))[01;36m)[00m)))
+		(S as a result their influence was felt at the highest level)))
 
 
 Sentence 4:
@@ -68,19 +49,7 @@ Sentence 4:
 			(DT The)
 			([01;36mVBN[00m [01;31mJJ[00m arranged)
 			(NN marriage))
-		(VP
-			(MD would)
-			(VP
-				(VB be)
-				(NP
-					(NP the social event)
-					(PP
-						(IN of)
-						(NP
-							(DT the)
-							[01;36m(ADJP[00m
-								(JJ following)[01;36m)[00m
-							(NN year))))))))
+		(VP would be the social event of the following year)))
 
 
 Sentence 5:
@@ -88,34 +57,21 @@ Sentence 5:
 	(S
 		(SBAR
 			(WHADVP When)
-			[01;31m(S[00m
-				[01;31m(PP[00m
+			(S
+				(PP
 					(IN at)
-					[01;36m(PP[00m [01;31m(NP[00m [01;33m(S[00m
-						([01;36mRB[00m [01;31mJJ[00m last)[01;31m)[00m[01;36m)[00m[01;31m)[00m
-				[01;36m(S[00m
-					(NP she)
-					(VP spoke)[01;36m)[00m[01;31m)[00m) [01;33mS)[00m
-		[01;36m(S[00m
-			(NP her words)
-			(VP
-				(VBD were)
-				(ADJP
-					[01;36m(ADJP[00m
-						(JJ heavy)[01;36m)[00m
-					(CC and)
-					[01;36m(ADJP[00m
-						(JJ disjointed)[01;36m)[00m))[01;36m)[00m))
+					[01;31m(NP[00m
+						([01;36mRB[00m [01;31mJJ[00m last)[01;31m)[00m)
+				(NP she)
+				(VP spoke)))
+		(NP her words)
+		(VP were heavy and disjointed)))
 
 
 Sentence 6:
 (ROOT
 	(S
-		(NP
-			(NP The road)
-			(PP
-				([01;36mIN[00m [01;31mTO[00m to)
-				(NP the coast)))
+		(NP The road to the coast)
 		(VP
 			(VBD was)
 			[01;36m(ADJP[00m
@@ -132,7 +88,12 @@ Sentence 7:
 			(DT The)
 			([01;36mJJ[00m [01;31mVBN[00m expected)
 			(NN date))
-		(VP came and went)))
+		(VP
+			[01;31m(VP[00m
+				(VBD came)[01;31m)[00m
+			(CC and)
+			[01;31m(VP[00m
+				(VBD went)[01;31m)[00m)))
 
 
 Sentence 8:
@@ -163,20 +124,22 @@ Sentence 8:
 
 
 Sentence 9:
-(ROOT
+(ROOT [01;33m(PP[00m
 	(S
-		(NP
-			(NP
-				([01;36mRB[00m [01;31mDT[00m All))
-			(PP
+		[01;31m(NP[00m
+			[01;31m(NP[00m
+				(DT All)[01;31m)[00m
+			[01;31m(PP[00m [01;33m(PP[00m
 				(IN through)
 				[01;31m(NP[00m
-					(NNP August)
+					[01;36m(NP[00m
+						(NNP August) [01;33mPP) PP)[00m[01;36m)[00m
 					[01;36m(NP[00m
 						(DT the)
-						(NN rain)[01;36m)[00m[01;31m)[00m))
+						(NN rain)[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
 		[01;36m(VP[00m
-			(ADVP hardly)
+			[01;31m(ADVP[00m
+				(RB hardly)[01;31m)[00m
 			[01;31m(VP[00m
 				(VBD stopped)[01;31m)[00m[01;36m)[00m))
 
@@ -189,5 +152,111 @@ Sentence 10:
 			[01;36m(NP[00m
 				(NP the gods)
 				(SBAR he did n't have to know of this)[01;36m)[00m)))
+
+
+Sentence 11:
+(ROOT
+	(S
+		(NP
+			[01;31m(NP[00m
+				(NP The horse)
+				[01;36m(ADVP[00m
+					(CONJP
+						(RB as)
+						(RB well)
+						([01;36mRB[00m [01;31mIN[00m as))[01;36m)[00m
+				[01;33m(NP[00m (NP the rabbits)[01;31m)[00m
+			(SBAR
+				(WHNP which)
+				(S
+					[01;31m(NP[00m
+						(PRP we)[01;31m)[00m
+					(VP
+						(VBD wanted)
+						[01;31m(S[00m
+							(VP
+								(TO to)
+								[01;31m(VP[00m
+									(VB eat)[01;31m)[00m)[01;31m)[00m)))) [01;33mNP)[00m
+		(VP has escaped)))
+
+
+Sentence 12:
+(ROOT
+	(S
+		(NP Natural disasters storms flooding hurricanes)
+		(VP
+			(VP
+				[01;36m(VP[00m
+					(VBP occur)[01;36m)[00m
+				(ADVP infrequently))
+			(CC but)
+			(VP
+				(VBP cause)
+				[01;36m(NP[00m
+					[01;31m(NP[00m
+						(NN devastation)[01;31m)[00m
+					(SBAR
+						([01;36mWDT[00m [01;31mIN[00m that)
+						[01;36m(VP[00m [01;31m(S[00m
+							[01;36m(VP[00m [01;31m(NP[00m
+								([01;36mVBZ[00m [01;31mNNS[00m strains)
+								[01;36m(NP[00m
+									(NNS resources)[01;36m)[00m[01;31m)[00m[01;36m)[00m
+							(PP
+								([01;36mIN[00m [01;31mTO[00m to)
+								(NP
+									([01;36mNN[00m [01;31mJJ[00m breaking)
+									(NN point)))[01;31m)[00m[01;36m)[00m)[01;36m)[00m))))
+
+
+Sentence 13:
+[01;31m(ROOT[00m [01;33m(NP[00m
+	[01;31m(S[00m
+		[01;31m(S[00m
+			[01;31m(NP[00m
+				(NP Letters)
+				[01;31m(VP[00m [01;33m(VP (SBAR[00m
+					[01;36m(VP[00m
+						(VBN delivered)
+						(PP on time)[01;36m)[00m
+					[01;31m(PP[00m [01;33m(PP[00m
+						(IN by)
+						[01;36m(ADJP[00m [01;31m(NP[00m [01;33m(NP[00m
+							[01;36m(ADJP[00m
+								(JJ old-fashioned)[01;36m)[00m
+							([01;36mJJ[00m [01;31mNNS[00m means)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+			[01;31m(VP[00m
+				([01;36mNNS[00m [01;31mVBP[00m are) [01;33mNP) PP) SBAR) VP) NP)[00m
+				[01;31m(ADJP[00m [01;33m(VP[00m
+					([01;36mVBP[00m [01;31mRB[00m increasingly)
+					([01;36mRB[00m [01;31mJJ[00m [01;33m(ADJP[00m rare)[01;31m)[00m[01;31m)[00m[01;31m)[00m
+		([01;36mJJ[00m [01;31mIN[00m so) [01;33mADJP) VP)[00m
+		[01;31m(S[00m [01;33m(SBAR[00m
+			[01;36m(ADVP[00m [01;31m(NP[00m
+				([01;36mRB[00m [01;31mPRP[00m it)[01;31m)[00m[01;36m)[00m
+			[01;31m(VP[00m [01;33m(S[00m
+				[01;36m(NP[00m
+					([01;36mPRP[00m [01;31mVBZ[00m is)[01;36m)[00m
+				[01;31m(ADVP[00m [01;33m(VP (VP[00m
+					[01;31m(ADVP[00m
+						([01;36mVBZ[00m [01;31mRB[00m as)
+						(RB [01;33m(ADVP[00m well)[01;31m)[00m
+					[01;31m(SBAR[00m
+						([01;36mRB[00m [01;31mIN[00m that) [01;33mADVP) VP)[00m
+						[01;31m(S[00m [01;33m(SBAR[00m
+							[01;31m(NP[00m
+								([01;36mIN[00m [01;31mDT[00m that)[01;31m)[00m
+							[01;31m(VP[00m [01;33m(S[00m
+								[01;36m(NP[00m
+									([01;36mDT[00m [01;31mVBZ[00m is)[01;36m)[00m
+								[01;31m(ADJP[00m [01;33m(VP[00m
+									[01;31m(NP[00m
+										([01;36mVBZ[00m [01;31mRB[00m not)
+										([01;36mRB[00m [01;31mDT[00m [01;33m(ADVP[00m the)
+										([01;36mDT[00m [01;31mJJ[00m [01;33m(NP (NP[00m only)
+										[01;36m(ADJP[00m
+											([01;36mJJ[00m [01;31mNN[00m [01;33m(NP[00m option)[01;36m)[00m[01;31m)[00m
+									([01;36mNN[00m [01;31mJJ[00m available)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m [01;33mNP) NP)[00m
 
 

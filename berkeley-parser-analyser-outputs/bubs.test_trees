@@ -1,7 +1,7 @@
 # Time of run:
-# Wed Jan  8 15:32:03 2025
+# Wed Jan 15 22:04:03 2025
 # Command:
-# berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-flat.txt bubs-output.txt berkeley-parser-analyser-outputs/bubs
+# berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt bubs-output.txt berkeley-parser-analyser-outputs/bubs
 #
 (ROOT (S (SBAR (IN As) (S (NP (PRP she)) (VP (VBD walked) (PP (IN past) (NP (PRP it)))))) (NP (NP (DT the) (NN driver) (POS 's)) (NN glass)) (VP (VBD started) (S (VP (TO to) (VP (VB open)))))))
 (ROOT (S (PP (IN With) (NP (DT a) (NN handkerchief))) (NP (PRP she)) (VP (VBD wiped) (NP (NP (DT the) (NN sweat)) (PP (IN from) (NP (PRP$ her) (NN forehead)))))))
@@ -13,3 +13,4 @@
 (ROOT (S (NP (PRP She)) (VP (VBD sighed) (PP (IN at) (NP (NP (NP (DT the) (NN irony)) (PP (IN of) (NP (PRP it) (DT all)))) (NP (NP (DT the) (NN waste)) (PP (IN of) (NP (PRP it) (DT all)))))))))
 (ROOT (S (NP (DT All)) (PP (IN through) (NP (NNP August))) (S (NP (DT the) (NN rain)) (ADVP (RB hardly)) (VP (VBD stopped)))))
 (ROOT (S (VP (VB Thank) (NP (NP (DT the) (NNS gods)) (SBAR (S (NP (PRP he)) (VP (VBD did) (RB n't) (VP (VB have) (S (VP (TO to) (VP (VB know) (PP (IN of) (NP (DT this))))))))))))))
+(ROOT (S (NP (NP (DT The) (NN horse)) (PP (RB as) (RB well) (IN as) (NP (NP (DT the) (NNS rabbits)) (SBAR (WHNP (WDT which)) (S (NP (PRP we)) (VP (VBD wanted) (S (VP (TO to) (VP (VB eat)))))))))) (VP (VBZ has) (VP (VBN escaped)))))
