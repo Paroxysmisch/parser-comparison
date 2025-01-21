@@ -1,5 +1,5 @@
 # Time of run:
-# Wed Jan 15 22:04:03 2025
+# Fri Jan 17 18:52:03 2025
 # Command:
 # berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt bubs-output.txt berkeley-parser-analyser-outputs/bubs
 #
@@ -14,3 +14,4 @@
 (ROOT (S (NP (DT All)) (PP (IN through) (NP (NNP August))) (S (NP (DT the) (NN rain)) (ADVP (RB hardly)) (VP (VBD stopped)))))
 (ROOT (S (VP (VB Thank) (NP (NP (DT the) (NNS gods)) (SBAR (S (NP (PRP he)) (VP (VBD did) (RB n't) (VP (VB have) (S (VP (TO to) (VP (VB know) (PP (IN of) (NP (DT this))))))))))))))
 (ROOT (S (NP (NP (DT The) (NN horse)) (PP (RB as) (RB well) (IN as) (NP (NP (DT the) (NNS rabbits)) (SBAR (WHNP (WDT which)) (S (NP (PRP we)) (VP (VBD wanted) (S (VP (TO to) (VP (VB eat)))))))))) (VP (VBZ has) (VP (VBN escaped)))))
+(ROOT (S (NP (NP (NNS Letters)) (VP (VBN delivered) (PP (IN on) (NP (NN time))) (PP (IN by) (NP (JJ old-fashioned) (NNS means))))) (VP (VBP are) (ADJP (RB increasingly) (JJ rare)) (SBAR (IN so) (S (NP (PRP it)) (VP (VBZ is) (ADVP (RB as) (RB well)) (SBAR (IN that) (S (NP (DT that)) (VP (VBZ is) (RB not) (NP (NP (DT the) (JJ only) (NN option)) (ADJP (JJ available))))))))))))

@@ -1,5 +1,5 @@
 # Time of run:
-# Wed Jan 15 22:04:03 2025
+# Fri Jan 17 18:52:03 2025
 # Command:
 # berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt bubs-output.txt berkeley-parser-analyser-outputs/bubs
 #
@@ -31,7 +31,5 @@ Sentence lengths do not match...
 Gold: Natural disasters storms flooding hurricanes occur infrequently but cause devastation that strains resources to breaking point
 Test: Natural disasters – storms flooding hurricanes – occur infrequently but cause devastation that strains resources to breaking point
 Sentence 13:
-Sentence lengths do not match...
-Gold: Letters delivered on time by old fashioned means are increasingly rare so it is as well that that is not the only option available
-Test: Letters delivered on time by old-fashioned means are increasingly rare so it is as well that that is not the only option available
+
 End of both input files

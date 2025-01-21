@@ -46,6 +46,8 @@ DELETE_LABEL ,
 DELETE_LABEL :
 DELETE_LABEL ``
 DELETE_LABEL ''
+DELETE_LABEL X
+DELETE_LABEL SYM
 
 ##------------------------------------------##
 ## Delete labels for length calculation     ##

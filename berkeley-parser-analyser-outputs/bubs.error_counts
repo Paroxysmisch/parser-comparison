@@ -1,11 +1,12 @@
 # Time of run:
-# Wed Jan 15 22:04:03 2025
+# Fri Jan 17 18:52:03 2025
 # Command:
 # berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt bubs-output.txt berkeley-parser-analyser-outputs/bubs
 #
-9 9 Single Word Phrase
-2 4 Modifier Attachment
-2 3 PP Attachment
-2 2 Unary
+11 11 Single Word Phrase
+4 6 Modifier Attachment
+3 4 PP Attachment
+3 3 Unary
 2 2 UNSET remove
-1 1 UNSET add
+2 2 UNSET add
+1 2 Clause Attachment

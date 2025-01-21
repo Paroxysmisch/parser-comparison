@@ -1,5 +1,5 @@
 # Time of run:
-# Wed Jan 15 22:04:03 2025
+# Fri Jan 17 18:52:03 2025
 # Command:
 # berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt stanford-lexicalized-output.txt berkeley-parser-analyser-outputs/stanford-lexicalized
 #
@@ -172,52 +172,43 @@ Sentence 12:
 
 
 Sentence 13:
-[01;31m(ROOT[00m [01;33m(NP[00m
-	[01;31m(S[00m
-		[01;31m(NP[00m
+(ROOT
+	(S
+		(NP
 			(NP Letters)
-			[01;31m(VP[00m [01;33m(VP (SBAR[00m
-				[01;36m(VP[00m
-					(VBN delivered)
-					(PP on time)[01;36m)[00m
-				[01;31m(PP[00m [01;33m(PP[00m
-					(IN by)
-					[01;36m(ADJP[00m [01;31m(NP[00m [01;33m(NP[00m
-						[01;36m(ADJP[00m
-							(JJ old-fashioned)[01;36m)[00m
-						([01;36mJJ[00m [01;31mNNS[00m means)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+			[01;36m(SBAR[00m
+				(VP
+					[01;36m(VP[00m
+						(VBN delivered)
+						(PP on time)[01;36m)[00m
+					(PP by old-fashioned means))[01;36m)[00m)
 		[01;31m(VP[00m
-			([01;36mNNS[00m [01;31mVBP[00m are) [01;33mNP) PP) SBAR) VP) NP)[00m
-			[01;31m(ADJP[00m [01;33m(VP[00m
-				([01;36mVBP[00m [01;31mRB[00m increasingly)
-				([01;36mRB[00m [01;31mJJ[00m [01;33m(ADJP[00m rare)[01;31m)[00m
-			[01;31m(SBAR[00m
-				([01;36mJJ[00m [01;31mIN[00m so) [01;33mADJP) VP)[00m
-				[01;31m(S[00m [01;33m(SBAR[00m
-					[01;36m(ADVP[00m [01;31m(NP[00m
-						([01;36mRB[00m [01;31mPRP[00m it)[01;31m)[00m[01;36m)[00m
-					[01;31m(VP[00m [01;33m(S[00m
-						[01;36m(NP[00m
-							([01;36mPRP[00m [01;31mVBZ[00m is)[01;36m)[00m
-						[01;31m(ADVP[00m [01;33m(VP (VP[00m
-							[01;31m(ADVP[00m
-								([01;36mVBZ[00m [01;31mRB[00m as)
-								(RB [01;33m(ADVP[00m well)[01;31m)[00m
-							[01;31m(SBAR[00m
-								([01;36mRB[00m [01;31mIN[00m that) [01;33mADVP) VP)[00m
-								[01;31m(S[00m [01;33m(SBAR[00m
-									[01;31m(NP[00m
-										([01;36mIN[00m [01;31mWDT[00m that)[01;31m)[00m
-									[01;31m(VP[00m [01;33m(S[00m
-										[01;36m(NP[00m
-											([01;36mDT[00m [01;31mVBZ[00m is)[01;36m)[00m
-										([01;36mVBZ[00m [01;31mRB[00m [01;33m(VP[00m not)
-										[01;31m(NP[00m [01;33m(ADVP[00m
-											([01;36mRB[00m [01;31mDT[00m the)
-											([01;36mDT[00m [01;31mJJ[00m [01;33m(NP (NP[00m only)
-											[01;36m(ADJP[00m
-												([01;36mJJ[00m [01;31mNN[00m [01;33m(NP[00m option)[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
-						[01;31m(ADJP[00m
-							([01;36mNN[00m [01;31mJJ[00m available)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m [01;33mNP) NP)[00m
+			[01;36m(VP[00m
+				(VBP are)
+				(ADJP increasingly rare)[01;36m)[00m
+			(SBAR
+				[01;36m(ADVP[00m
+					([01;36mRB[00m [01;31mIN[00m so)[01;36m)[00m
+				(S
+					(NP it)
+					(VP [01;33m(VP[00m
+						(VBZ is)
+						[01;31m(ADVP[00m
+							(ADVP as well) [01;33mVP)[00m
+							[01;31m(SBAR[00m [01;33m(SBAR[00m
+								(IN that)
+								[01;31m(S[00m [01;33m(S[00m
+									(NP
+										([01;36mDT[00m [01;31mWDT[00m that))
+									[01;31m(VP[00m [01;33m(VP[00m
+										(VBZ is)
+										(RB [01;33m(ADVP[00m not)
+										(NP [01;33m(NP[00m
+											(DT the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+						(ADJP available))))[01;31m)[00m)) [01;33mNP) ADVP) VP) S) SBAR)[00m
 
 

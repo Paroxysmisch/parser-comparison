@@ -1,5 +1,5 @@
 # Time of run:
-# Wed Jan 15 22:04:03 2025
+# Fri Jan 17 18:52:03 2025
 # Command:
 # berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt stanford-unlexicalized-output.txt berkeley-parser-analyser-outputs/stanford-unlexicalized
 #
@@ -779,6 +779,375 @@ Step:Single Word Phrase
 									(NN point))))))))))
 
 Sentence 13:
-Sentence lengths do not match...
-Gold: Letters delivered on time by old fashioned means are increasingly rare so it is as well that that is not the only option available
-Test: Letters delivered on time by old-fashioned means are increasingly rare so it is as well that that is not the only option available
+15 Initial errors
+0 on fringe, 11 iterations
+3 Error:NP Attachment
+2 Error:Clause Attachment
+2 Error:Modifier Attachment
+1 Error:PP Attachment
+1 Error:Unary
+1 Error:Single Word Phrase
+1 Error:Clause Attachment
+1 Error:Modifier Attachment
+1 Error:Single Word Phrase
+1 Error:UNSET add
+1 Error:UNSET remove
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP
+				(NP Letters)
+				[01;36m(SBAR[00m
+					(VP
+						[01;36m(VP[00m
+							(VBN delivered)
+							(PP on time)[01;36m)[00m
+						(PP by old-fashioned means))[01;36m)[00m)
+			(VP are increasingly rare)[01;31m)[00m
+		[01;36m(SBAR[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mIN[00m so)[01;36m)[00m
+			(S
+				(NP it)
+				(VP [01;33m(VP[00m
+					(VBZ is)
+					[01;31m(ADVP[00m
+						(ADVP as well) [01;33mVP)[00m
+						(SBAR
+							(IN that)
+							(S
+								(NP that)
+								(VP
+									(VBZ is)
+									[01;36m(ADVP[00m [01;31m(ADJP[00m
+										[01;31m(NP[00m
+											(RB not)
+											[01;36m(NP[00m
+												(DT [01;33m(NP[00m the)
+												[01;36m(NP[00m
+													[01;36m(ADJP[00m
+														(JJ only)[01;36m)[00m
+													(NN option)[01;36m)[00m[01;36m)[00m[01;31m)[00m
+										[01;36m(ADJP[00m
+											(JJ available)[01;36m)[00m[01;31m)[00m[01;36m)[00m)))[01;31m)[00m))[01;36m)[00m)) [01;33mNP)[00m
+Step:NP Attachment
+{'type': 'move', 'old_parent': 'ADJP', 'new_parent': 'VP', 'movers': ['NP'], 'mover info': [('NP', (18, 22))], 'new_family': ['VBZ', 'NP', 'ADJP'], 'old_family': ['NP', 'JJ'], 'start left siblings': [], 'start right siblings': ['JJ'], 'end left siblings': ['VBZ'], 'end right siblings': ['ADJP'], 'auto preterminals': ('VBZ', 'RB', 'DT', 'JJ', 'NN', 'JJ'), 'auto preterminal span': (17, 23), 'added and moved': True, 'added label': 'NP', 'adding node already present': False, 'classified_type': 'NP Attachment'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP
+				(NP Letters)
+				[01;36m(SBAR[00m
+					(VP
+						[01;36m(VP[00m
+							(VBN delivered)
+							(PP on time)[01;36m)[00m
+						(PP by old-fashioned means))[01;36m)[00m)
+			(VP are increasingly rare)[01;31m)[00m
+		[01;36m(SBAR[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mIN[00m so)[01;36m)[00m
+			(S
+				(NP it)
+				(VP [01;33m(VP[00m
+					(VBZ is)
+					[01;31m(ADVP[00m
+						(ADVP as well) [01;33mVP)[00m
+						(SBAR
+							(IN that)
+							(S
+								(NP that)
+								(VP
+									(VBZ is)
+									(ADVP
+										[01;31m(NP[00m
+											(RB not)
+											[01;36m(NP[00m
+												(DT [01;33m(NP[00m the)
+												[01;36m(NP[00m
+													[01;36m(ADJP[00m
+														(JJ only)[01;36m)[00m
+													(NN option)[01;36m)[00m[01;36m)[00m[01;31m)[00m
+										(ADJP available)))))[01;31m)[00m))[01;36m)[00m)) [01;33mNP)[00m
+Step:Clause Attachment
+{'type': 'move', 'old_parent': 'ADVP', 'new_parent': 'S', 'movers': ['SBAR'], 'mover info': [('SBAR', (15, 23))], 'new_family': ['NP', 'VP', 'SBAR'], 'old_family': ['ADVP', 'SBAR'], 'start left siblings': ['ADVP'], 'start right siblings': [], 'end left siblings': ['NP', 'VP'], 'end right siblings': [], 'auto preterminals': ('PRP', 'VBZ', 'RB', 'RB', 'IN', 'DT', 'VBZ', 'RB', 'DT', 'JJ', 'NN', 'JJ'), 'auto preterminal span': (11, 23), 'added and moved': True, 'added label': 'NP', 'adding node already present': False, 'classified_type': 'Clause Attachment'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP
+				(NP Letters)
+				[01;36m(SBAR[00m
+					(VP
+						[01;36m(VP[00m
+							(VBN delivered)
+							(PP on time)[01;36m)[00m
+						(PP by old-fashioned means))[01;36m)[00m)
+			(VP are increasingly rare)[01;31m)[00m
+		[01;36m(SBAR[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mIN[00m so)[01;36m)[00m
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									[01;31m(NP[00m
+										(RB not)
+										[01;36m(NP[00m
+											(DT [01;33m(NP[00m the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m[01;36m)[00m[01;31m)[00m
+									(ADJP available)))))))[01;36m)[00m)) [01;33mNP)[00m
+Step:Modifier Attachment
+{'type': 'move', 'old_parent': 'NP', 'new_parent': 'ADVP', 'movers': ['RB'], 'mover info': [('RB', (18, 19))], 'new_family': ['RB', 'NP', 'ADJP'], 'old_family': ['RB', 'DT', 'JJ', 'NN'], 'start left siblings': [], 'start right siblings': ['DT', 'JJ', 'NN'], 'end left siblings': [], 'end right siblings': ['NP', 'ADJP'], 'auto preterminals': ('RB', 'DT', 'JJ', 'NN', 'JJ'), 'auto preterminal span': (18, 23), 'POS confusion': ('RB', 'RB'), 'classified_type': 'Modifier Attachment'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP
+				(NP Letters)
+				[01;36m(SBAR[00m
+					(VP
+						[01;36m(VP[00m
+							(VBN delivered)
+							(PP on time)[01;36m)[00m
+						(PP by old-fashioned means))[01;36m)[00m)
+			(VP are increasingly rare)[01;31m)[00m
+		[01;36m(SBAR[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mIN[00m so)[01;36m)[00m
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									(RB not)
+									[01;36m(NP[00m
+										(NP
+											(DT the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m)
+										(ADJP available)[01;36m)[00m))))))[01;36m)[00m))
+Step:PP Attachment
+{'type': 'add', 'label': 'VP', 'span': (1, 4), 'subtrees': ['VBN', 'PP'], 'parent': 'VP', 'family': ['VP', 'PP'], 'auto preterminals': ('VBN', 'IN', 'NN'), 'auto preterminal span': (1, 4), 'left siblings': [], 'right siblings': [(PP (IN by) (NP (JJ old-fashioned) (NNS means)))], 'over_word': False, 'over words': False, 'classified_type': 'PP Attachment'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP
+				(NP Letters)
+				[01;36m(SBAR[00m
+					(VP
+						(VP delivered on time)
+						(PP by old-fashioned means))[01;36m)[00m)
+			(VP are increasingly rare)[01;31m)[00m
+		[01;36m(SBAR[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mIN[00m so)[01;36m)[00m
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									(RB not)
+									[01;36m(NP[00m
+										(NP
+											(DT the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m)
+										(ADJP available)[01;36m)[00m))))))[01;36m)[00m))
+Step:Unary
+{'type': 'add', 'label': 'SBAR', 'span': (1, 7), 'subtrees': ['VP'], 'parent': 'NP', 'family': ['NP', 'SBAR'], 'auto preterminals': ('VBN', 'IN', 'NN', 'IN', 'JJ', 'NNS'), 'auto preterminal span': (1, 7), 'left siblings': [(NP (NNS Letters))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'Unary'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP Letters delivered on time by old-fashioned means)
+			(VP are increasingly rare)[01;31m)[00m
+		[01;36m(SBAR[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mIN[00m so)[01;36m)[00m
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									(RB not)
+									[01;36m(NP[00m
+										(NP
+											(DT the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m)
+										(ADJP available)[01;36m)[00m))))))[01;36m)[00m))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADVP', 'span': (10, 11), 'subtrees': ['IN'], 'parent': 'S', 'family': ['S', 'ADVP', 'S'], 'auto preterminals': ('IN',), 'auto preterminal span': (10, 11), 'left siblings': [(S (NP (NP (NNS Letters)) (SBAR (VP (VP (VBN delivered) (PP (IN on) (NP (NN time)))) (PP (IN by) (NP (JJ old-fashioned) (NNS means)))))) (VP (VBP are) (ADJP (RB increasingly) (JJ rare))))], 'right siblings': [(S (NP (PRP it)) (VP (VP (VBZ is) (ADVP (RB as) (RB well))) (SBAR (IN that) (S (NP (DT that)) (VP (VBZ is) (ADVP (RB not) (NP (DT the) (JJ only) (NN option)) (ADJP (JJ available))))))))], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP Letters delivered on time by old-fashioned means)
+			(VP are increasingly rare)[01;31m)[00m
+		[01;36m(SBAR[00m
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m so))
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									(RB not)
+									[01;36m(NP[00m
+										(NP
+											(DT the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m)
+										(ADJP available)[01;36m)[00m))))))[01;36m)[00m))
+Step:Clause Attachment
+{'type': 'add', 'label': 'SBAR', 'span': (10, 23), 'subtrees': ['ADVP', 'S'], 'parent': 'S', 'family': ['S', 'SBAR'], 'auto preterminals': ('IN', 'PRP', 'VBZ', 'RB', 'RB', 'IN', 'DT', 'VBZ', 'RB', 'DT', 'JJ', 'NN', 'JJ'), 'auto preterminal span': (10, 23), 'left siblings': [(S (NP (NP (NNS Letters)) (SBAR (VP (VP (VBN delivered) (PP (IN on) (NP (NN time)))) (PP (IN by) (NP (JJ old-fashioned) (NNS means)))))) (VP (VBP are) (ADJP (RB increasingly) (JJ rare))))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'Clause Attachment'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP Letters delivered on time by old-fashioned means)
+			(VP are increasingly rare)[01;31m)[00m
+		(SBAR
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m so))
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									(RB not)
+									[01;36m(NP[00m
+										(NP
+											(DT the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m)
+										(ADJP available)[01;36m)[00m)))))))))
+Step:Modifier Attachment
+{'type': 'add', 'label': 'NP', 'span': (19, 23), 'subtrees': ['NP', 'ADJP'], 'parent': 'ADVP', 'family': ['RB', 'NP'], 'auto preterminals': ('DT', 'JJ', 'NN', 'JJ'), 'auto preterminal span': (19, 23), 'left siblings': [(RB not)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'Modifier Attachment'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP Letters delivered on time by old-fashioned means)
+			(VP are increasingly rare)[01;31m)[00m
+		(SBAR
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m so))
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									(RB not)
+									(NP
+										(NP
+											(DT the)
+											[01;36m(NP[00m
+												[01;36m(ADJP[00m
+													(JJ only)[01;36m)[00m
+												(NN option)[01;36m)[00m)
+										(ADJP available)))))))))))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADJP', 'span': (20, 21), 'subtrees': ['JJ'], 'parent': 'NP', 'family': ['DT', 'ADJP', 'NN'], 'auto preterminals': ('JJ',), 'auto preterminal span': (20, 21), 'left siblings': [(DT the)], 'right siblings': [(NN option)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP Letters delivered on time by old-fashioned means)
+			(VP are increasingly rare)[01;31m)[00m
+		(SBAR
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m so))
+			(S
+				(NP it)
+				(VP
+					(VP is as well)
+					(SBAR
+						(IN that)
+						(S
+							(NP that)
+							(VP
+								(VBZ is)
+								(ADVP
+									(RB not)
+									(NP
+										(NP
+											(DT the)
+											[01;36m(NP[00m
+												(ADJP only)
+												(NN option)[01;36m)[00m)
+										(ADJP available)))))))))))
+Step:UNSET add
+{'type': 'add', 'label': 'NP', 'span': (20, 22), 'subtrees': ['ADJP', 'NN'], 'parent': 'NP', 'family': ['DT', 'NP'], 'auto preterminals': ('JJ', 'NN'), 'auto preterminal span': (20, 22), 'left siblings': [(DT the)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(ROOT
+	(S
+		[01;31m(S[00m
+			(NP Letters delivered on time by old-fashioned means)
+			(VP are increasingly rare)[01;31m)[00m
+		(SBAR
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m so))
+			(S it is as well that that is not the only option available))))
+Step:UNSET remove
+{'type': 'remove', 'label': 'S', 'span': (0, 10), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['S', 'SBAR'], 'left siblings': [], 'right siblings': ['SBAR'], 'over words': False, 'over_word': False, 'auto preterminals': ('NNS', 'VBN', 'IN', 'NN', 'IN', 'JJ', 'NNS', 'VBP', 'RB', 'JJ', 'IN', 'PRP', 'VBZ', 'RB', 'RB', 'IN', 'DT', 'VBZ', 'RB', 'DT', 'JJ', 'NN', 'JJ'), 'auto preterminal span': (0, 23), 'POS confusion': ('IN', 'RB'), 'classified_type': 'UNSET remove'}
+(ROOT
+	(S
+		(NP Letters delivered on time by old-fashioned means)
+		(VP are increasingly rare)
+		(SBAR
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m so))
+			(S it is as well that that is not the only option available))))
+

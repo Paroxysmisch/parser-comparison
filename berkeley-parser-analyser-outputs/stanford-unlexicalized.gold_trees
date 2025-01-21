@@ -1,5 +1,5 @@
 # Time of run:
-# Wed Jan 15 22:04:03 2025
+# Fri Jan 17 18:52:03 2025
 # Command:
 # berkeley-parser-analyser/berkeley_parse_analyser/classify_english.py gold-fixed.txt stanford-unlexicalized-output.txt berkeley-parser-analyser-outputs/stanford-unlexicalized
 #
@@ -15,3 +15,4 @@
 (ROOT (S (VP (VBP Thank) (NP (NP (DT the) (NNS gods)) (SBAR (S (NP (PRP he)) (VP (VBD did) (RB n't) (VP (VB have) (S (VP (TO to) (VP (VB know) (PP (IN of) (NP (DT this))))))))))))))
 (ROOT (S (NP (NP (DT The) (NN horse)) (CONJP (ADVP (RB as) (RB well) (RB as))) (NP (NP (DT the) (NNS rabbits)) (SBAR (WHNP (WDT which)) (S (PRP we) (VP (VBD wanted) (VP (TO to) (VB eat))))))) (VP (VBZ has) (VP (VBN escaped)))))
 (ROOT (S (NP (NP (JJ Natural) (NNS disasters)) (PRN (NP (NP (NNS storms)) (NP (NN flooding)) (NP (NNS hurricanes))))) (VP (VP (VP (VBP occur)) (ADVP (RB infrequently))) (CC but) (VP (VBP cause) (NP (NN devastation) (SBAR (WDT that) (VP (VP (VBZ strains) (NP (NNS resources))) (PP (IN to) (NP (NN breaking) (NN point))))))))))
+(ROOT (S (NP (NP (NNS Letters)) (SBAR (VP (VP (VBN delivered) (PP (IN on) (NP (NN time)))) (PP (IN by) (NP (JJ old-fashioned) (NNS means)))))) (VP (VBP are) (ADJP (RB increasingly) (JJ rare))) (SBAR (ADVP (RB so)) (S (NP (PRP it)) (VP (VP (VBZ is) (ADVP (RB as) (RB well))) (SBAR (IN that) (S (NP (DT that)) (VP (VBZ is) (ADVP (RB not) (NP (NP (DT the) (NP (ADJP (JJ only)) (NN option))) (ADJP (JJ available))))))))))))
