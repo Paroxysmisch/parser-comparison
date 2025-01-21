@@ -11,7 +11,7 @@
 	{
 		devShells = forEachSupportedSystem ({ pkgs }: {
 			default = pkgs.mkShell {
-				packages = with pkgs; [ jdk8 wget gnumake gcc] ++
+				packages = with pkgs; [ jdk8 wget gnumake gcc python3] ++
 				(if stdenv.isDarwin then [ libiconv ] # Darwin-specific dependency
 				else [ glibc ]);
 			};
